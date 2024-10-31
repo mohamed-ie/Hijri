@@ -9,6 +9,10 @@ android {
     namespace = "com.hijri.core.network"
 }
 
+secrets {
+    defaultPropertiesFileName = "secrets.defaults.properties"
+}
+
 dependencies {
     api(projects.core.model)
     implementation(projects.core.common)
