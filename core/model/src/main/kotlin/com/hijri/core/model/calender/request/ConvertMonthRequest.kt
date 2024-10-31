@@ -1,0 +1,9 @@
+package com.hijri.core.model.calender.request
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class ConvertMonthRequest(
+    val month: Int,
+    val year: Int
+)

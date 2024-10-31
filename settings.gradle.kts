@@ -1,4 +1,6 @@
 includeBuild("build-logic")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
     repositories {
         google {
@@ -12,6 +14,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -22,4 +25,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Hijri"
 include(":app")
- 
+include(":core:network")
+include(":core:model")
+include(":core:common")
